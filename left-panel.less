@@ -1,5 +1,7 @@
 #app{
 
+    @expandFullEnabled: true;
+
     .leftPanel {
 
         a{
@@ -27,6 +29,18 @@
                 margin: 7px 5px 0 0;
                 display: block;
             }
+
+            .expandFullButton{
+                float: right;
+                background: url('@{img-path}arrows_right.png') no-repeat;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                margin: 7px 5px 0 0;
+                display: none;
+            }
+
+            .expandFull();
         }
 
         .closed{
@@ -51,4 +65,9 @@
         }
     }
 
+    .expandFull() when (@expandFullEnabled = true) {
+        .expandFullButton{
+            display: block;
+        }
+    }
 }
