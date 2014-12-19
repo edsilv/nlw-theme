@@ -19,7 +19,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 16px;
     border-radius: 50%;
     background: @gray;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 
 input[type=range]:focus {
@@ -27,7 +27,7 @@ input[type=range]:focus {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
+    background: @gray-light;
 }
 
 /* Firefox */
@@ -38,8 +38,6 @@ input[type=range]{
 
     /*required for proper track sizing in FF*/
     width: 300px;
-
-    overflow: hidden;
 }
 
 input[type=range]::-moz-range-track {
@@ -88,9 +86,11 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
     background: @gray-light;
 }
+
 input[type=range]::-ms-fill-upper {
-    background: @gray-lighter;
+    background: @gray-light;
 }
+
 input[type=range]::-ms-thumb {
     border: none;
     height: 16px;
@@ -98,9 +98,11 @@ input[type=range]::-ms-thumb {
     border-radius: 50%;
     background: @gray;
 }
+
 input[type=range]:focus::-ms-fill-lower {
-    background: #888;
+    background:  @gray-light;
 }
+
 input[type=range]:focus::-ms-fill-upper {
-    background: #ccc;
+    background: @gray-lighter;
 }
