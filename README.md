@@ -1,2 +1,2 @@
-coreplayer-default-theme
+uv-default-theme
 ========================
