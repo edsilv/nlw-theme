@@ -1,2 +1,2 @@
-uv-default-theme
+default-theme
 ========================
