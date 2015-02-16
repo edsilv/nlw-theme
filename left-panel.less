@@ -47,11 +47,18 @@
             width: 25px;
             float: right;
 
+            a, a:link, a:visited, a:hover, a:active {
+                color: @text-color;
+                text-decoration: none;
+            }
+
             .title{
-                width: 20px;
+                white-space: nowrap;
                 display: block;
-                margin: 5px 0 0 0;
+                margin: 8px 8px 0 0px;
                 cursor: pointer;
+                text-transform: uppercase;
+                .rotate(90deg);
             }
 
             .expandButton{

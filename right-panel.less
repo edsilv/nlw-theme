@@ -44,11 +44,18 @@
         .closed{
             width: 25px;
 
+            a, a:link, a:visited, a:hover, a:active {
+                color: @text-color;
+                text-decoration: none;
+            }
+
             .title{
-                width: 20px;
+                white-space: nowrap;
                 display: block;
-                margin: 5px 0 0 5px;
+                margin: 8px 3px 0 5px;
                 cursor: pointer;
+                text-transform: uppercase;
+                .rotate(90deg);
             }
 
             .expandButton{
