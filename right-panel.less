@@ -11,7 +11,7 @@
             .title{
                 position: absolute;
                 height: 20px;
-                margin-top: 6px;
+                margin-top: 9px;
                 cursor: pointer;
                 left: 35px;
             }
@@ -55,8 +55,6 @@
                 margin: 8px 3px 0 5px;
                 cursor: pointer;
                 text-transform: uppercase;
-                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); // ie8
-                width: 250px; // ie8
                 .rotate(90deg);
             }
 
@@ -92,6 +90,18 @@
 
         .expandFullButton{
             display: block;
+        }
+    }
+}
+
+// ie8
+#app.browser-Explorer.browser-version-8 {
+    .rightPanel{
+        .closed{
+            .title{
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+                width: 250px;
+            }
         }
     }
 }
