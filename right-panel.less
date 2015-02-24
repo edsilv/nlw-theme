@@ -11,7 +11,7 @@
             .title{
                 position: absolute;
                 height: 20px;
-                margin-top: 6px;
+                margin-top: 9px;
                 cursor: pointer;
                 left: 35px;
             }
@@ -45,10 +45,13 @@
             width: 25px;
 
             .title{
-                width: 20px;
+                .link-color-decoration(@text-color, none);
+                white-space: nowrap;
                 display: block;
-                margin: 5px 0 0 5px;
+                margin: 8px 3px 0 5px;
                 cursor: pointer;
+                text-transform: uppercase;
+                .rotate(90deg);
             }
 
             .expandButton{
